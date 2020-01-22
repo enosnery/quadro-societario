@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc428bdf-db34-476f-943b-a28efc5cb68a" name="Default Changelist" comment="" />
+    <list default="true" id="cc428bdf-db34-476f-943b-a28efc5cb68a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/quadro-societario.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/quadro-societario.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable path="composer" />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -70,9 +82,32 @@
       <path value="$PROJECT_DIR$/vendor/symfony/validator" />
       <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/jms/serializer" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/hoa/compiler" />
+      <path value="$PROJECT_DIR$/vendor/hoa/consistency" />
+      <path value="$PROJECT_DIR$/vendor/hoa/event" />
+      <path value="$PROJECT_DIR$/vendor/hoa/exception" />
+      <path value="$PROJECT_DIR$/vendor/hoa/file" />
+      <path value="$PROJECT_DIR$/vendor/hoa/iterator" />
+      <path value="$PROJECT_DIR$/vendor/hoa/math" />
+      <path value="$PROJECT_DIR$/vendor/hoa/protocol" />
+      <path value="$PROJECT_DIR$/vendor/hoa/regex" />
+      <path value="$PROJECT_DIR$/vendor/hoa/stream" />
+      <path value="$PROJECT_DIR$/vendor/hoa/ustring" />
+      <path value="$PROJECT_DIR$/vendor/hoa/visitor" />
+      <path value="$PROJECT_DIR$/vendor/hoa/zformat" />
+      <path value="$PROJECT_DIR$/vendor/jms/serializer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
     </include_path>
   </component>
   <component name="ProjectId" id="1WgOwMNgvXP79Msu2eOsowFVtp7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -111,7 +146,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579568008652</updated>
-      <workItem from="1579568009841" duration="3345000" />
+      <workItem from="1579568009841" duration="4151000" />
+      <workItem from="1579657586121" duration="2309000" />
     </task>
     <servers />
   </component>
@@ -139,10 +175,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="459" y="277" key="ComposerInitDialogKey/0.0.1366.728@0.0.1366.728" timestamp="1579571205560" />
-    <state x="462" y="179" key="NewPhpClassDialog" timestamp="1579570843046">
+    <state x="462" y="179" key="NewPhpClassDialog" timestamp="1579659103642">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="179" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1579570843046" />
+    <state x="462" y="179" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1579659103642" />
     <state x="517" y="288" key="NewPhpFileDialog" timestamp="1579569857159">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

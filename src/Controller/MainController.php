@@ -2,10 +2,16 @@
 
 namespace App\Controller;
 
-use http\Env\Request;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Route;
 
+
+
+/**
+ * Class MainController
+ * @Route("v2", name="main_")
+ */
 class MainController{
 
     public function main(){
@@ -14,6 +20,7 @@ class MainController{
 
     /**
      * @Route("company/add", name="save_company", methods={"POST"})
+     * @param Request $request
      */
     public function save(Request $request){
 
