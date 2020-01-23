@@ -11,7 +11,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\Entity
  * @ORM\Table(name="company")
  */
-class Company{
+class Company extends JsonSeriali{
     /**
      * @ORM\Column(type="integer")
      * @ORM\Id

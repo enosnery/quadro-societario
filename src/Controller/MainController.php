@@ -2,27 +2,51 @@
 
 namespace App\Controller;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+
+use App\Entity\Company;
+use App\Repository\CompanyRepository;
+use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityManagerInterface;
+use Doctrine\ORM\Mapping\Entity;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Serializer\Encoder\JsonEncoder;
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
+use Symfony\Component\Serializer\Serializer;
 
 
-
-/**
- * Class MainController
- * @Route("v2", name="main_")
- */
 class MainController{
-
+    /**
+     * @var CompanyRepository
+     */
+    private $companyRepository;
+    /**
+     * @Route("/", name="index")
+     *
+     */
     public function main(){
-        return new Response('funfando');
+        return new Response('O Servidor Está Online!');
     }
 
     /**
-     * @Route("company/add", name="save_company", methods={"POST"})
-     * @param Request $request
+     * @Route("/company", name="getCompany")
+     * @return Response
      */
-    public function save(Request $request){
+    public function getCompanyList(){
+        echo $this->companyRepository;
+//       $resposta = $this->companyRepository->findAll();
+        $encoders = [
+            new JsonEncoder()
+        ];
+        $normalizer = new ObjectNormalizer();
+        $normalizers = [$normalizer];
+        $serializer  = new Serializer($normalizers, $encoders);
+        $json = $serializer->serialize(["pegada", "chanfle", $this->companyRepository], 'json');
+        return new Response($json);
+    }
+
+    public function save(){
 
     }
 }

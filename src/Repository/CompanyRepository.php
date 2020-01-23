@@ -7,11 +7,17 @@ namespace App\Repository;
 use App\Entity\Company;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Doctrine\ORM\EntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use PhpParser\Node\Expr\Array_;
 
 class CompanyRepository extends ServiceEntityRepository
 {
     private $manager;
+    /**
+     * @var EntityRepository
+     */
+    private $repository;
 
     public function __construct
     (
@@ -20,6 +26,7 @@ class CompanyRepository extends ServiceEntityRepository
     )
     {
         parent::__construct($registry, Company::class);
+        $this->repository = $manager->getRepository(Company::class);
         $this->manager = $manager;
     }
 
