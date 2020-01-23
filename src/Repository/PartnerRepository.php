@@ -12,6 +12,10 @@ use Doctrine\Persistence\ManagerRegistry;
 class PartnerRepository extends ServiceEntityRepository
 {
     private $manager;
+    /**
+     * @var EntityRepository
+     */
+    private $repository;
 
     public function __construct
     (
@@ -20,7 +24,19 @@ class PartnerRepository extends ServiceEntityRepository
     )
     {
         parent::__construct($registry, Partner::class);
+        $this->repository = $manager->getRepository(Partner::class);
         $this->manager = $manager;
+    }
+
+    public function savePartner($name, $CPF){
+        $partner = new Partner();
+
+        $partner->setName($name);
+        $partner->setCNPJ($CPF);
+
+        $this->manager->persist($partner);
+        $this->manager->flush();
+
     }
 
 
